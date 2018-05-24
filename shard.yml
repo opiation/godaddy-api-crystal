@@ -1,0 +1,12 @@
+name: godaddy-api
+version: 0.1.0
+
+authors:
+  - Nicholas Gelinas <nick.gelinas@gmail.com>
+
+description: |
+  Goddady API client for Crystal
+
+crystal: 0.24.2
+
+license: GPL-3.0
