@@ -43,7 +43,8 @@ pages:
       - public/
   dependencies:
     - build on rasmus
-  only: master
+  only:
+    - master
   script:
     mv docs public
   stage: documentation
