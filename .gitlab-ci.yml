@@ -1,0 +1,52 @@
+stages:
+  - test
+  - build
+  - documentation
+
+cache:
+  paths:
+    - .shards/
+    - lib/
+    - shard.lock
+
+test on rasmus:
+  script:
+    - crystal deps
+    - crystal spec
+  stage: test
+  tags:
+    - rasmus
+    - shell
+
+build on rasmus:
+  artifacts:
+    paths:
+      - bin/
+      - docs/
+  only:
+    - master
+    - staging
+  script:
+    - crystal deps
+    - crystal docs
+    - mkdir bin
+    - crystal build --release --progress -o bin/godaddy-api src/godaddy-api.cr
+  stage: build
+  tags:
+    - rasmus
+    - shell
+
+pages:
+  allow_failure: true
+  artifacts:
+    paths:
+      - public/
+  dependencies:
+    - build on rasmus
+  only: master
+  script:
+    mv docs public
+  stage: documentation
+  tags:
+    - rasmus
+    - shell

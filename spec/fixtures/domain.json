@@ -1,0 +1,101 @@
+{
+  "authCode": "string",
+  "contactAdmin": {
+    "addressMailing": {
+      "address1": "string",
+      "address2": "string",
+      "city": "string",
+      "country": "US",
+      "postalCode": "string",
+      "state": "string"
+    },
+    "email": "user@example.com",
+    "fax": "string",
+    "jobTitle": "string",
+    "nameFirst": "string",
+    "nameLast": "string",
+    "nameMiddle": "string",
+    "organization": "string",
+    "phone": "string"
+  },
+  "contactBilling": {
+    "addressMailing": {
+      "address1": "string",
+      "address2": "string",
+      "city": "string",
+      "country": "US",
+      "postalCode": "string",
+      "state": "string"
+    },
+    "email": "user@example.com",
+    "fax": "string",
+    "jobTitle": "string",
+    "nameFirst": "string",
+    "nameLast": "string",
+    "nameMiddle": "string",
+    "organization": "string",
+    "phone": "string"
+  },
+  "contactRegistrant": {
+    "addressMailing": {
+      "address1": "string",
+      "address2": "string",
+      "city": "string",
+      "country": "US",
+      "postalCode": "string",
+      "state": "string"
+    },
+    "email": "user@example.com",
+    "fax": "string",
+    "jobTitle": "string",
+    "nameFirst": "string",
+    "nameLast": "string",
+    "nameMiddle": "string",
+    "organization": "string",
+    "phone": "string"
+  },
+  "contactTech": {
+    "addressMailing": {
+      "address1": "string",
+      "address2": "string",
+      "city": "string",
+      "country": "US",
+      "postalCode": "string",
+      "state": "string"
+    },
+    "email": "user@example.com",
+    "fax": "string",
+    "jobTitle": "string",
+    "nameFirst": "string",
+    "nameLast": "string",
+    "nameMiddle": "string",
+    "organization": "string",
+    "phone": "string"
+  },
+  "createdAt": "2018-05-24T02:47:23.419Z",
+  "deletedAt": "2018-05-24T02:47:23.419Z",
+  "transferAwayEligibleAt": "2018-05-24T02:47:23.419Z",
+  "domain": "string",
+  "domainId": 0,
+  "expirationProtected": true,
+  "expires": "2018-05-24T02:47:23.419Z",
+  "holdRegistrar": true,
+  "locked": true,
+  "nameServers": [
+    "string"
+  ],
+  "privacy": true,
+  "renewAuto": true,
+  "renewDeadline": "2018-05-24T02:47:23.419Z",
+  "status": "string",
+  "subaccountId": "string",
+  "transferProtected": true,
+  "verifications": {
+    "domainName": {
+      "status": "APPROVED"
+    },
+    "realName": {
+      "status": "APPROVED"
+    }
+  }
+}
